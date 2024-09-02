@@ -42,6 +42,7 @@ const Page = () => {
     }
   }, [slug]);
 
+  
   const updateBlogPost = async (formData: any) => {
     try {
       const response = await fetch(`/api/blogs/update/${slug}`, {
